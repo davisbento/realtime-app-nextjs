@@ -18,5 +18,5 @@ export async function fetchRedis(command: Command, ...args: (string | number)[])
 	}
 
 	const data = await response.json();
-	return data.result as string;
+	return data.result;
 }
